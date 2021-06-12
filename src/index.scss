@@ -1,0 +1,380 @@
+:root {
+  --pale-blue: #f1fefe;
+  --aqua-blue: #00dbd0;
+  --white: #ffffff;
+}
+
+.bg-lit{
+  background-color: #fbfefe;
+}
+.bar-vert{
+  height: 2px ;
+  background-color: var(--aqua-blue);
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@font-face {
+  font-family: LibreBaskerville-Regular;
+  src: local(LibreBaskerville-Regular),
+   
+    url(../src/assets/LibreBaskerville-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: LibreBaskerville-Bold ;
+  src: local(LibreBaskerville-Bold),
+   
+    url('../src/assets/LibreBaskerville-Bold.ttf') format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+section,footer{
+  width: 100vw;
+}
+body{
+  font-family: LibreBaskerville-Regular;
+ overflow-x: hidden;
+  font-size: 16px;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+header{
+  height: 100vh;
+  width: 100vw;
+
+  padding: 18.5px 117px 106px 139px;
+  background: linear-gradient(to bottom, var(--pale-blue), rgba(241, 254, 254, 0));
+}
+.mt-4{
+  margin-top: 4rem;
+}
+.mt-2{
+  margin-top: 2rem;
+}
+.mt-8{
+  margin-top: 23rem;
+}
+.line-height1{
+  line-height: 2.5;
+}
+.icon1{
+  width: 50px;
+  height: auto;
+}
+.bg-aqua{
+  background-color: var(--aqua-blue);
+}
+.bg-dark{
+  background-color: #374b5c;
+}
+.bar {
+  height: 2px;
+   background-color: var(--aqua-blue);
+   width: 100px;
+   margin-top: 1rem;
+   display: block;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.rounded-btn {
+  border: 2px solid var(--aqua-blue);
+  cursor: pointer;
+  margin-left: 30px;
+  padding: .8rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: all .2s ease;
+  display: inline-block;
+  &:hover{
+    color: white;
+    background: var(--aqua-blue);
+  }
+  
+}
+.rounded-btn-dark {
+  cursor: pointer;
+  background: var(--aqua-blue);
+  color: white;
+  padding: 1.5rem 4rem;
+  font-family:LibreBaskerville-Bold ;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: all .2s ease;
+  display: inline-block;
+  border: 2px solid var(--aqua-blue);
+  &:hover{
+    color: var(--aqua-blue);
+    background: white;
+
+  }
+  
+}
+.ip3 {
+  border-radius: 25px;
+  border: 1px solid rgba(211, 205, 205, 0.589);
+  padding: 50px; 
+  width: 200px;
+  height: 10px;  
+}
+.markers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  justify-content: spa;
+  &-point{
+    height: 10px ;
+    width: 10px;
+    border-radius: 100%;
+    margin-right: 1rem;
+  //  background-color: red;
+  }
+  img{
+    margin-right: 10px;
+  }
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+ // align-items: center;
+ height: 100px;
+  &-logo{
+    display: flex;
+   // align-items: center;
+    padding-top: 10px;
+   // flex-basis: 100px;
+    &-text {
+      font-size: 42px;
+      font-family:LibreBaskerville-Bold ;
+      color: #374b5c;
+      margin: 15px 329px 177px 9.5px;
+    }
+  }
+  
+  &-links{
+    display: flex;
+    align-items: center;
+    &-link{
+      //margin-right: 10px;
+    //  margin: 17.5px 53px 7px 54px;
+      margin: 0 0 0 3.4rem;
+      color:  #374b5c;
+      font-style: normal;
+      cursor: pointer;
+      &::after{
+        height: 2px;
+        content: "";
+        background: var(--aqua-blue);
+        display: block;
+        width: 100%;
+        margin-top: 4px;
+        transform: scaleX(0);
+        transition: all .2s ease;
+        transform-origin: left;
+      }
+   //   line-height: 1.31;
+      &:hover::after{
+        transform: scaleX(1);
+       
+      }
+    }
+  }
+}
+.head{
+  font-family: LibreBaskerville-Bold;
+}
+.main{
+  display: flex;
+  margin-top: 12rem;
+  align-items: center;
+  justify-content: space-between;
+  &-right{
+    display: flex;
+    flex-grow: 1;
+    
+   
+    align-items: center;
+    flex-direction: row-reverse;
+    &-design{
+      align-self: flex-end;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-back{
+        border:3rem solid white;
+      }
+      &-box{
+        background: white;
+        position: relative;
+        padding: 8rem;
+       
+        outline: 3px solid var(--aqua-blue);
+        border:10px solid white;
+        &-hero {
+          position: absolute;
+          left: -20rem;
+          top: 1rem;
+        }
+        
+      }
+    }
+  }
+}
+.image1,.image2,.image3{
+  background-position: center;
+  background-size: cover;
+}
+.image1{
+
+  background-image: url("../src/assets/potted-plant-near-cosmetics-bottles-jars_23-2147787938.png");
+}
+.image2{
+
+  background-image: url("../src/assets/containers-with-products-table-with-copy-space_23-2148366089.png");
+}
+.image3{
+
+  background-image: url("../src/assets/eucalyptus-essential-oil-soap-green-background-zero-waste-natural-organic-bathroom-tools_80743-2766.png");
+}
+.description{
+  padding: 18.5px 117px 106px 139px;
+  &-header{
+    flex-basis: 100rem;
+   text-align: center;
+    
+
+  }
+  &-content{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &-card{
+     
+    //  background-color: red;
+      &-blog{
+        width: 35rem;
+        position: relative;
+        &-text{
+          text-align: center;
+          font-size: 1.3rem;
+          &-head{
+            font-size: 1.6rem;
+            color: var(--aqua-blue);
+            margin: 20px 0 ;
+            &-readm{
+              font-size: 1.6rem;
+            }
+            
+          }
+        }
+        &-image{
+          border-radius: 20px 20px 0px 0;
+          height: 20rem;
+          width: 100%;
+        
+           
+        }
+      }
+    }
+  }
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input{
+    flex-basis: 50%;
+    //height: 80px;
+    
+  }
+  
+}
+.testim{
+  background-image: url("../src/assets/Group\ 134.png");
+  background-repeat: no-repeat;
+  background-position-x: -50rem;
+  padding: 18.5px 117px 106px 139px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  &-usr-image{
+    height: 10rem;
+    width: 10rem;
+    margin-top: 4rem;
+    background-position: -10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    background: url('../src/assets/woman-in-brown-jacket-and-black-shirt-3484683.png');
+  }
+}
+footer {
+  padding: 18.5px 117px 106px 139px;
+  height: 400px;
+  background-image: url("./assets/Group\ 229.png");
+  background-size: cover;
+  background-position-x: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  color: white;
+}
+.footer-set{
+  flex-grow: 1;
+  &-social {
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    &-icon{
+      margin-right: 10px;
+    }
+  }
+}
+.footer-set-content{
+
+    display: flex;
+  &-links{
+    margin-right: 140px;
+    &-link{
+      margin-top: 15px;
+      cursor: pointer;
+     
+     
+      
+      &:after {
+        content: "";
+        height: 1px;
+        display: block;
+        width: 100%;
+        background-color: white;
+        transition:  all .2s ease-out;
+        transform-origin: left;
+        transform: scaleX(0);
+      }
+      &:hover::after{
+        transform: scaleX(1);
+      }
+    }
+  }
+  
+}
