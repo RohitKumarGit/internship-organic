@@ -1,0 +1,31 @@
+[debug] [2021-06-13T02:01:40.102Z] ----------------------------------------------------------------------
+[debug] [2021-06-13T02:01:40.104Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-06-13T02:01:40.104Z] CLI Version:   9.12.1
+[debug] [2021-06-13T02:01:40.104Z] Platform:      win32
+[debug] [2021-06-13T02:01:40.105Z] Node Version:  v14.15.4
+[debug] [2021-06-13T02:01:40.106Z] Time:          Sun Jun 13 2021 07:31:40 GMT+0530 (India Standard Time)
+[debug] [2021-06-13T02:01:40.106Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-13T02:01:40.118Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-13T02:01:40.118Z] > authorizing via signed-in user (campon99@gmail.com)
+[debug] [2021-06-13T02:01:40.118Z] [iam] checking project nuclues-project for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-06-13T02:01:40.120Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/nuclues-project:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-06-13T02:01:41.702Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 13 Jun 2021 02:01:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1314","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-13T02:01:41.704Z] > refreshing access token with scopes: []
+[debug] [2021-06-13T02:01:41.704Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-13T02:01:42.089Z] <<< HTTP RESPONSE 200 {"date":"Sun, 13 Jun 2021 02:01:42 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-13T02:01:42.122Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nuclues-project [none]
+[debug] [2021-06-13T02:01:42.660Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nuclues-project 200
+[debug] [2021-06-13T02:01:42.660Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nuclues-project {"projectId":"nuclues-project","projectNumber":"358452549767","displayName":"nuclues-project","name":"projects/nuclues-project","resources":{"hostingSite":"nuclues-project","realtimeDatabaseInstance":"nuclues-project"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'nuclues-project'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-06-13T02:01:42.666Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-13T02:01:42.666Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-13T02:01:43.017Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 13 Jun 2021 02:01:43 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-13T02:01:43.036Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/nuclues-project/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
